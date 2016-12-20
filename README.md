@@ -7,3 +7,4 @@ Technologies used:
 - Jquery (needed to carousel component of Bootstrap)
 - npm
 - git
+- Google fonts
