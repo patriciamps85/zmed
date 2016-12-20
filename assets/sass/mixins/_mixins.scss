@@ -1,0 +1,42 @@
+/*Elements Mixins*/
+
+@import "colors";
+
+@mixin circle($width, $height, $top)
+{
+  width: $width;
+  height: $height;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  line-height: 25px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: $top;
+}
+
+@mixin gradient($fromColor, $toColor)
+{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/$fromColor+0,082f6b+100 */
+background: $fromColor; /* Old browsers */
+background: -moz-linear-gradient(top,  $fromColor 0%, $toColor 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  $fromColor 0%,$toColor 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  $fromColor 0%,$toColor 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$fromColor', endColorstr='$toColor',GradientType=0 ); /* IE6-9 */
+
+}
+
+
+/*Media Query Mixins*/
+
+@mixin  bp-MediumDesktop  
+{
+	@media (min-width: 1200px) {
+		@content;
+	}
+}
+
+
+

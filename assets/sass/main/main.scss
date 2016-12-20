@@ -1,0 +1,94 @@
+body {
+	font-family: 'Lato', sans-serif;
+}
+.container {
+	@include bp-MediumDesktop {
+		width: 1000px;
+	}
+}
+
+.box {
+	margin-bottom: 50px;
+
+	.title {
+		width: 120%;
+		background-color: $light_blue_title;
+		padding: 14px 10% 14px 10%;
+		margin-top: 25px;
+		font-size: 30px;
+		line-height: 30px;
+		font-weight: bold;
+		color: #fff;
+		text-transform: uppercase;
+		z-index: 3;
+
+		&.right {
+			margin-left: -20%;
+			padding-left: 20% ;
+		}
+	}
+	.description {
+		padding:20px 35px 20px 35px;
+		font-size: 16px;
+		line-height: 16px;
+		font-weight: normal;
+
+		ul {
+			padding: 0px;
+			li {
+				list-style: none;
+				margin-bottom: 20px;
+			}
+		}
+
+	}
+
+	img {
+		border: 1px solid #dedede;
+		width: 100%;
+		height: auto;
+		position: relative;
+		z-index: -1;
+	}
+	
+}
+
+.clients-area {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+	padding: 34px 30px 20px 30px;
+
+	font-weight: bold;
+	text-transform: uppercase;
+	min-height:250px;
+	background: url(../../dist/images/clients.png);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+
+	.clients-title {
+		font-size: 30px;
+		color: #fff;
+		margin-bottom: 20px;
+	}
+	.circles {
+		&>div {
+			a {
+				&:hover,
+				&:focus,
+				&:active {
+					text-decoration: none;
+					outline: none;
+				}
+
+			}
+			&:first-child .circle{
+				@include circle (155px, 155px, 18%);
+			}
+			.circle {
+				@include circle (155px, 155px, 15%);
+				background-color: $light_blue;
+			}
+		}
+	}
+}

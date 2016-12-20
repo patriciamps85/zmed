@@ -1,0 +1,32 @@
+footer {
+	width: 100%;
+	padding-top: 45px;
+	padding-bottom: 50px;
+	@include gradient(#3eb3c5, #082f6b)
+
+
+	ul  {
+		color: #fff;
+
+		&.address {
+			padding: 0px;
+		}
+		&.contact {
+			padding-left: 15px;
+		}
+
+		li {
+			list-style: none;
+			font-size: 16px;
+			line-height: 16px;
+			margin-bottom: 16px;
+
+			&:first-child {
+				font-size: 20px;
+				line-height: 20px;
+				font-weight: bold;
+			}
+
+		}
+	}
+}
